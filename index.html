@@ -18,7 +18,7 @@ setTimeout(CR)
 
 function CR(){var txt='';var mc=0;var td=null;var e=null;
 for(var i=0;i<TR.childNodes.length;i++){e=document.createElement('I')
-td=TR.childNodes(i);txt=td.lastChild.innerText;if(txt==''){continue}
+td=TR.childNodes[i];txt=td.lastChild.innerText;if(txt==''){continue}
 mc=('\n'+txt).match(/\n/g).length-(td.childNodes(1).getElementsByTagName('b').length||0)
 MC+=mc
 e.innerText=mc
