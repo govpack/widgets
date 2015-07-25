@@ -1,5 +1,4 @@
 <html><head><title>WidgetList</title>
-<link rel="stylesheet" type="text/css" href="../../../../3/A/Modify/Styles/Body_Scroll_Bar_z.txt">
 <style>
 BODY{font-family:Consolas;border:0;overflow-y:auto;overflow-x:scroll;}
 TABLE{border-collapse:collapse}
@@ -13,21 +12,13 @@ I{float:left;background:blue;color:white}
 <base target="BLANK" />
 <script>
 var MC=0
-top.jklm(self)
-function init(){Œ=l.g(self);if(!Œ){return}
-if(self.parent!=top){l.z(self)}
+function init(){
 setTimeout(CR)
 }
-
-function CLK(e){return
-e=e||event.srcElement
-if(e.tagName!='A'){return}fp=e.href
-l.b(fp);event.returnValue=false;return false}
 
 function CR(){var txt='';var mc=0;var td=null;var e=null;
 for(var i=0;i<TR.childNodes.length;i++){e=document.createElement('I')
 td=TR.childNodes(i);txt=td.lastChild.innerText;if(txt==''){continue}
-//td.style.cssText='border:1 solid silver;vertical-align:top;white-space:nowrap'
 mc=('\n'+txt).match(/\n/g).length-(td.childNodes(1).getElementsByTagName('b').length||0)
 MC+=mc
 e.innerText=mc
@@ -38,7 +29,7 @@ d1.innerText=MC
 
 </script>
 </head>
-<body id="bd" onload="init()" onclick="CLK()"><span onclick="l.c(TB.outerHTML)" id="d1" style="position:absolute;top:444;font-size:1in"></span>
+<body id="bd" onload="init()" ><span onclick="l.c(TB.outerHTML)" id="d1" style="position:absolute;top:444;font-size:1in"></span>
 <table id="TB">
 <tr id="TR"><td><a href="http://jqueryui.com/">jqueryui</a><pre>Accordion
 Autocomplete
