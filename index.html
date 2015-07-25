@@ -22,7 +22,7 @@ for(var i=0;i<TR.childNodes.length;i++){e=document.createElement('I')
 td=TR.childNodes[i];
 pre=td.childNodes[1]
 txt=pre.innerText;if(!pre||pre.tagName!='PRE'||!txt){continue}
-mc=('\n'+txt).match(/\n/g).length-pre.getElementsByTagName('b').length||0)
+mc=('\n'+txt).match(/\n/g).length-(pre.getElementsByTagName('b').length||0)
 MC+=mc
 e.innerText=mc
 td.insertBefore(e,td.firstChild)
